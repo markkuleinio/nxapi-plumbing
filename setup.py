@@ -4,7 +4,7 @@ import os
 import re
 
 
-requirements = ["requests>=2.7.0", "lxml", "scp"]
+requirements = ["requests>=2.7.0", "lxml"]
 
 with open("README.md", "r") as fs:
     long_description = fs.read()
