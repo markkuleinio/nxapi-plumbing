@@ -4,7 +4,7 @@ import os
 import re
 
 
-requirements = ["requests>=2.7.0", "lxml", "future", "scp", "six"]
+requirements = ["requests>=2.7.0", "lxml", "scp"]
 
 with open("README.md", "r") as fs:
     long_description = fs.read()
@@ -40,8 +40,6 @@ setup(
     author_email="ktbyers@twb-tech.com",
     license="Apache2",
     classifiers=[
-        "Programming Language :: Python :: 2",
-        "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
