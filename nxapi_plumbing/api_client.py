@@ -1,14 +1,9 @@
-from __future__ import print_function, unicode_literals
-
-from builtins import super
 import requests
 from requests.auth import HTTPBasicAuth
 from requests.exceptions import ConnectionError
 import json
 
 from lxml import etree
-
-from six import string_types
 
 from nxapi_plumbing.errors import (
     NXAPIError,
@@ -97,7 +92,7 @@ class RPCClient(RPCBase):
         """Send a command down the NX-API channel."""
         if method is None:
             method = self.cmd_method
-        if isinstance(commands, string_types):
+        if isinstance(commands, str):
             commands = [commands]
 
         raw_text = True if method == "cli_ascii" else False
@@ -188,7 +183,7 @@ class XMLClient(RPCBase):
         """Send a command down the NX-API channel."""
         if method is None:
             method = self.cmd_method
-        if isinstance(commands, string_types):
+        if isinstance(commands, str):
             commands = [commands]
 
         response = self._send_request(commands, method=method)

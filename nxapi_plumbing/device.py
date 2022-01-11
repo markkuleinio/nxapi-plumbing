@@ -1,5 +1,3 @@
-from __future__ import print_function, unicode_literals
-
 from nxapi_plumbing.errors import NXAPIError, NXAPICommandError
 from nxapi_plumbing.api_client import RPCClient, XMLClient
 
