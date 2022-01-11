@@ -13,7 +13,7 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 from nxapi_plumbing import Device
-from mock_device import MockDevice
+from .mock_device import MockDevice
 
 
 PWD = path.dirname(path.realpath(__file__))
