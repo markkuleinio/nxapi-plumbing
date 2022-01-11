@@ -1,6 +1,3 @@
-from __future__ import unicode_literals
-from builtins import super
-
 from requests.auth import HTTPBasicAuth
 import json
 from lxml import etree
